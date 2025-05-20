@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Interativo</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .error { color: red; }
+    .resultado { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Quiz de Conhecimentos Gerais</h2>
+  <form id="quizForm">
+    <label>1. Qual a capital do Brasil?</label><br>
+    <input type="text" name="capital" id="capital"><br><br>
+
+    <label>2. Qual destes é um mamífero?</label><br>
+    <input type="radio" name="mamifero" value="tubarão"> Tubarão<br>
+    <input type="radio" name="mamifero" value="baleia"> Baleia<br>
+    <input type="radio" name="mamifero" value="polvo"> Polvo<br><br>
+
+    <label>3. Selecione as linguagens de programação:</label><br>
+    <input type="checkbox" name="linguagens" value="Python"> Python<br>
+    <input type="checkbox" name="linguagens" value="HTML"> HTML<br>
+    <input type="checkbox" name="linguagens" value="C++"> C++<br>
+    <input type="checkbox" name="linguagens" value="CSS"> CSS<br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="mensagemErro" class="error"></div>
+  <div id="resultado" class="resultado"></div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
